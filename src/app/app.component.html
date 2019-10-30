@@ -1,3 +1,7 @@
-<h1>{{ title }}</h1>
-<a routerLink="/experts">Experts</a>
-<router-outlet></router-outlet>
+<hs-app-shell>
+  <div title>{{ title }}</div>
+
+  <div outlet>
+    <router-outlet></router-outlet>
+  </div>
+</hs-app-shell>
