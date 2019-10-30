@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'expert',
+  selector: 'hs-expert',
   templateUrl: './expert.component.html',
   styleUrls: ['./expert.component.scss']
 })
