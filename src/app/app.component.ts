@@ -6,5 +6,9 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
+  pages = [
+    { url: "home", title: "Home" },
+    { url: "/experts", title: "Experts" }
+  ];
   title = "Firebase Experts";
 }

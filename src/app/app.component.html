@@ -1,6 +1,13 @@
 <hs-app-shell>
+  <!--- ngcontent title -->
   <div title>{{ title }}</div>
-
+  <!--- ngcontent links -->
+  <mat-nav-list links>
+    <mat-list-item *ngFor="let page of pages" routerLink="{{ page.url }}">
+      {{ page.title }}
+    </mat-list-item>
+  </mat-nav-list>
+  <!--- ngcontent router-outlet -->
   <div outlet>
     <router-outlet></router-outlet>
   </div>
