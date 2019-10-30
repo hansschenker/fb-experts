@@ -8,7 +8,14 @@ import { Component } from "@angular/core";
 export class AppComponent {
   pages = [
     { url: "home", title: "Home" },
-    { url: "/experts", title: "Experts" }
+    {
+      url: "/experts",
+      title: "Experts",
+      children: [
+        { url: "/experts/list", title: "List" },
+        { url: "/experts/add", title: "Add a Expert" }
+      ]
+    }
   ];
   title = "Firebase Experts";
 }

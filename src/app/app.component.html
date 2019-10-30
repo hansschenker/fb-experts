@@ -3,9 +3,14 @@
   <div title>{{ title }}</div>
   <!--- ngcontent links -->
   <mat-nav-list links>
-    <mat-list-item *ngFor="let page of pages" routerLink="{{ page.url }}">
+    <mat-list-item *ngFor="let page of pages" [routerLink]="page.url">
       {{ page.title }}
     </mat-list-item>
+    <!-- <mat-nav-list *ngIf="page.children">
+        <mat-list-item *ngFor="let c of page.children" [routerLink]="c.url">
+          {{ c.title }}
+        </mat-list-item>
+      </mat-nav-list> -->
   </mat-nav-list>
   <!--- ngcontent router-outlet -->
   <div outlet>
